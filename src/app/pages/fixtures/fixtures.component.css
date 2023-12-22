@@ -1,0 +1,19 @@
+.table th,
+td {
+  padding: 13px;
+}
+.fixtures {
+  background-color: #f9f9ef;
+  border-radius: 25px;
+  padding: 15px;
+}
+button {
+  margin-top: 10px;
+  background-color: #8282e5;
+  border: 1px #fff;
+  width: 100px;
+  color: #fff;
+  font-size: 17px;
+  padding: 11px;
+  border-radius: 5px;
+}

@@ -1,0 +1,24 @@
+.menu {
+  border: 1px gray solid;
+  border-radius: 10px;
+  background-color: rgb(247, 233, 233);
+}
+.menuItems {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.menuItems li {
+  list-style: none;
+}
+
+.menuItems li a {
+  text-decoration: none;
+  color: #181515;
+  font-size: 17px;
+}
+.active {
+  background-color: rgb(223, 144, 144);
+  padding: 5px;
+  border-radius: 3px;
+}

@@ -1,0 +1,15 @@
+.standingTable th,
+td {
+  border: 1px solid rgb(155, 151, 151);
+  /* padding: 10px; */
+}
+a {
+  text-decoration: none;
+  color: blue;
+  font-size: 18px;
+}
+a:hover {
+  background-color: #e5c8c8;
+  padding: 6px;
+  border-radius: 10px;
+}

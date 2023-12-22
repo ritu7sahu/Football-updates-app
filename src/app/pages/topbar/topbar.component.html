@@ -1,0 +1,65 @@
+<div>
+  <h2 style="text-align:center">Football updates</h2>
+  <p>Click on the country name to get the standings</p>
+  <div class="league">
+    <div class="menu">
+      <ul class="menuItems">
+        <li>
+          <a
+            href="javascript:void(0)"
+            #Engref
+            id="EnglandSelect"
+            [routerLink]="['/standings', Engref.id]"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+            >England</a
+          >
+        </li>
+        <li>
+          <a
+            href="javascript:void(0)"
+            #Spainref
+            id="SpainSelect"
+            [routerLink]="['/standings', Spainref.id]"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+            >Spain</a
+          >
+        </li>
+        <li>
+          <a
+            href="javascript:void(0)"
+            #Gerref
+            id="GermanySelect"
+            [routerLink]="['/standings', Gerref.id]"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+            >Germany</a
+          >
+        </li>
+        <li>
+          <a
+            href="javascript:void(0)"
+            #franceref
+            id="FranceSelect"
+            [routerLink]="['/standings', franceref.id]"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+            >France</a
+          >
+        </li>
+        <li>
+          <a
+            href="javascript:void(0)"
+            #italyref
+            id="ItalySelect"
+            [routerLink]="['/standings', italyref.id]"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+            >Italy</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

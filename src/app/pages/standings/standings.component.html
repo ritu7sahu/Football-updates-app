@@ -1,0 +1,40 @@
+<app-topbar></app-topbar>
+<div>
+  <ng-container *ngIf="leagueData && leagueData.length > 1">
+    <p>Click on the team name to get the team details</p>
+    <table class="standingTable">
+      <tr>
+        <th></th>
+        <th></th>
+        <th>Name</th>
+        <th>Games</th>
+        <th>W</th>
+        <th>L</th>
+        <th>D</th>
+        <th>Goal Difference</th>
+        <th>Points</th>
+      </tr>
+
+      <tr *ngFor="let data of leagueData; let i = index">
+        <td>{{ data.rank }}</td>
+        <td>
+          <img [src]="data.team.logo" alt="No image Available" />
+        </td>
+        <td>
+          <a
+            [routerLink]="['/fixtures', data.team.id]"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+            >{{ data.team.name }}</a
+          >
+        </td>
+        <td>{{ data.all.played }}</td>
+        <td>{{ data.all.win }}</td>
+        <td>{{ data.all.lose }}</td>
+        <td>{{ data.all.draw }}</td>
+        <td>{{ data.goalsDiff }}</td>
+        <td>{{ data.points }}</td>
+      </tr>
+    </table>
+  </ng-container>
+</div>
